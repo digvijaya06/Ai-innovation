@@ -1,16 +1,152 @@
-# React + Vite
+# 🎟️ Ticket Booking & Checkout Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### *The “Booking & State” Master*
 
-Currently, two official plugins are available:
+A **React-based Ticket Booking application** that implements a **multi-step booking flow** using **React Router** and **Context API / Redux** for state management.
+The project demonstrates handling complex forms, preserving application state, implementing price logic, validation rules, and custom CSS styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Project Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project simulates a real-world **ticket booking and checkout system** where users can:
 
-## Expanding the ESLint configuration
+* Select a travel route
+* Choose passenger type (Student / Senior / Regular)
+* Specify ticket quantity
+* View a detailed price breakdown
+* Confirm their booking
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The booking state is preserved across routes and page refreshes using centralized state management.
+
+---
+
+## 🚀 Features
+
+### ✅ Multi-Step Booking Form (React Router)
+
+* **Step 1:** Route Selection
+* **Step 2:** Passenger Type & Ticket Quantity
+* **Step 3:** Booking Confirmation
+
+Navigation between steps is handled using **React Router**, ensuring a smooth step-based flow.
+
+---
+
+### ✅ State Management (Context API / Redux)
+
+* Booking data is stored globally
+* User selections persist when:
+
+  * Navigating back and forth between steps
+  * Refreshing the browser
+* Eliminates prop drilling and improves scalability
+
+---
+
+### ✅ Price Engine
+
+* A centralized utility function calculates ticket price
+* Pricing logic:
+
+  ```
+  Final Price = Base Route Price – Applicable Discounts
+  ```
+* Discounts applied based on passenger type:
+
+  * 🎓 Student Discount
+  * 👴 Senior Citizen Discount
+
+---
+
+### ✅ Validation Rules
+
+* Users **cannot book more than 5 tickets**
+* Form-level validation prevents invalid submissions
+* Ensures required fields are completed before proceeding
+
+---
+
+### ✅ UI & Styling
+
+* Custom **CSS** added for:
+
+  * Step navigation
+  * Forms & inputs
+  * Buttons and layout
+  * Price summary cards
+* Responsive and clean user interface
+
+---
+
+## 🧠 Technical Focus
+
+* React Functional Components
+* React Router
+* Context API / Redux
+* Multi-Step Form Logic
+* Centralized Price Calculation
+* Client-Side Validation
+* CSS Styling
+
+---
+
+## 🧰 Tech Stack
+
+* **Frontend:** React.js
+* **Routing:** React Router
+* **State Management:** Context API / Redux
+* **Styling:** CSS
+* **Logic:** JavaScript Utility Functions
+
+---
+
+
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/digvijaya06/Ticket-Booking.git
+   ```
+
+2. **Navigate to the project folder**
+
+   ```bash
+   cd Ticket-Booking/ticket-booking
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the application**
+
+  ```
+   npm run dev
+   ```
+
+## 📊 Evaluation Criteria Mapping
+
+| Requirement                | Marks | Status      |
+| -------------------------- | ----- | ----------- |
+| Multi-Step Booking Form    | 20    | ✅ Completed |
+| State Management           | 15    | ✅ Completed |
+| Price Calculation Engine   | 10    | ✅ Completed |
+| Validation (Max 5 Tickets) | 5     | ✅ Completed |
+| CSS Styling                | Bonus | ✅ Added     |
+
+
+## 🎯 Learning Outcomes
+
+* Implemented React Router for step-based navigation
+* Managed global state efficiently
+* Designed reusable pricing logic
+* Built form validations for real-world constraints
+* Improved UI with custom CSS
+
+
+
