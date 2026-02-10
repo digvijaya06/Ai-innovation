@@ -1,0 +1,108 @@
+{
+  "structure": {
+    "src": {
+      "type": "directory",
+      "description": "Main source code directory",
+      "children": {
+        "components": {
+          "type": "directory",
+          "description": "React components organized by purpose",
+          "children": {
+            "ui": {
+              "type": "directory",
+              "description": "shadcn/ui components (auto-generated, do not manually edit)",
+              "auto_generated": true
+            },
+            "layout": {
+              "type": "directory",
+              "description": "Layout components like Header, Footer, Sidebar",
+              "conventions": "One component per file, PascalCase naming"
+            },
+            "features": {
+              "type": "directory",
+              "description": "Feature-specific components, organized by feature",
+              "conventions": "Group related components in subdirectories"
+            }
+          }
+        },
+        "stores": {
+          "type": "directory",
+          "description": "Zustand state management stores",
+          "conventions": "kebab-case with -store suffix, e.g., user-store.ts",
+          "pattern": "One store per domain (user, ui, cart, etc.)"
+        },
+        "pages": {
+          "type": "directory",
+          "description": "Page/route components",
+          "conventions": "PascalCase naming, one page per route"
+        },
+        "lib": {
+          "type": "directory",
+          "description": "Utility functions, API clients, helper functions",
+          "conventions": "kebab-case naming, export pure functions"
+        },
+        "hooks": {
+          "type": "directory",
+          "description": "Custom React hooks",
+          "conventions": "camelCase with 'use' prefix, e.g., useAuth.ts"
+        },
+        "types": {
+          "type": "directory",
+          "description": "TypeScript type definitions and interfaces",
+          "conventions": "kebab-case naming, export types/interfaces"
+        },
+        "App.tsx": {
+          "type": "file",
+          "description": "Main application component with routing setup"
+        },
+        "main.tsx": {
+          "type": "file",
+          "description": "Application entry point"
+        },
+        "index.css": {
+          "type": "file",
+          "description": "Global styles and Tailwind directives"
+        }
+      }
+    },
+    "public": {
+      "type": "directory",
+      "description": "Static assets (images, fonts, etc.)"
+    },
+    ".agent": {
+      "type": "directory",
+      "description": "AI agent guidance and project intelligence",
+      "children": {
+        "README.md": {
+          "type": "file",
+          "description": "Guide for AI agents navigating this project"
+        },
+        "CONVENTIONS.md": {
+          "type": "file",
+          "description": "Coding standards and naming conventions"
+        },
+        "project-structure.json": {
+          "type": "file",
+          "description": "This file - machine-readable project structure"
+        }
+      }
+    }
+  },
+  "naming_conventions": {
+    "components": "PascalCase (UserProfile.tsx)",
+    "utilities": "kebab-case (format-date.ts)",
+    "hooks": "camelCase with 'use' prefix (useAuth.ts)",
+    "stores": "kebab-case with '-store' suffix (user-store.ts)",
+    "types": "kebab-case (user.ts)",
+    "pages": "PascalCase (Dashboard.tsx)"
+  },
+  "important_paths": {
+    "architecture_docs": "PROJECT_ARCHITECTURE.md",
+    "metadata": "PROJECT_METADATA.json",
+    "component_registry": "COMPONENT_REGISTRY.md",
+    "state_management_docs": "STATE_MANAGEMENT.md",
+    "api_docs": "API_ENDPOINTS.md",
+    "conventions": ".agent/CONVENTIONS.md",
+    "skill_reference": "vite-nextjs-frontend-SKILL.md"
+  }
+}

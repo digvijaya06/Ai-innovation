@@ -1,0 +1,173 @@
+{
+    "project": {
+        "name": "AI Innovation Project",
+        "version": "0.1.0",
+        "description": "Modern React application built with Vite, TypeScript, and Tailwind CSS",
+        "created": "2026-02-07",
+        "last_updated": "2026-02-07T16:37:04+05:30"
+    },
+    "technology_stack": {
+        "framework": {
+            "name": "Vite",
+            "version": "6.x",
+            "purpose": "Build tool and dev server"
+        },
+        "ui_library": {
+            "name": "React",
+            "version": "18.x",
+            "purpose": "UI framework"
+        },
+        "language": {
+            "name": "TypeScript",
+            "version": "5.x",
+            "purpose": "Type safety"
+        },
+        "styling": {
+            "name": "Tailwind CSS",
+            "version": "3.x",
+            "purpose": "Utility-first CSS framework"
+        },
+        "ui_components": {
+            "name": "shadcn/ui",
+            "version": "latest",
+            "purpose": "Accessible component library"
+        },
+        "state_management": {
+            "name": "Zustand",
+            "version": "4.x",
+            "purpose": "Lightweight state management"
+        },
+        "routing": {
+            "name": "React Router",
+            "version": "6.x",
+            "purpose": "Client-side routing"
+        }
+    },
+    "project_structure": {
+        "total_components": 0,
+        "ui_components": 0,
+        "layout_components": 0,
+        "feature_components": 0,
+        "total_pages": 1,
+        "total_stores": 0,
+        "total_hooks": 0,
+        "total_types": 1
+    },
+    "components": {
+        "ui": {
+            "location": "src/components/ui",
+            "count": 0,
+            "auto_generated": true,
+            "note": "shadcn components installed on-demand"
+        },
+        "layout": {
+            "location": "src/components/layout",
+            "count": 0,
+            "components": []
+        },
+        "features": {
+            "location": "src/components/features",
+            "count": 0,
+            "components": []
+        }
+    },
+    "stores": {
+        "location": "src/stores",
+        "count": 0,
+        "stores": []
+    },
+    "pages": {
+        "location": "src/pages",
+        "count": 1,
+        "pages": [
+            "Home"
+        ]
+    },
+    "routes": {
+        "count": 1,
+        "routes": [
+            {
+                "path": "/",
+                "component": "Home",
+                "description": "Landing page with welcome message and project info"
+            }
+        ]
+    },
+    "hooks": {
+        "location": "src/hooks",
+        "count": 0,
+        "hooks": []
+    },
+    "types": {
+        "location": "src/types",
+        "count": 1,
+        "types": [
+            "User"
+        ]
+    },
+    "dependencies": {
+        "react": {
+            "purpose": "UI framework",
+            "type": "core"
+        },
+        "react-dom": {
+            "purpose": "React DOM rendering",
+            "type": "core"
+        },
+        "react-router-dom": {
+            "purpose": "Client-side routing",
+            "type": "core"
+        },
+        "zustand": {
+            "purpose": "State management",
+            "type": "core"
+        },
+        "tailwindcss": {
+            "purpose": "Utility-first CSS",
+            "type": "styling"
+        },
+        "@radix-ui/react-*": {
+            "purpose": "Primitives for shadcn/ui",
+            "type": "ui"
+        },
+        "class-variance-authority": {
+            "purpose": "CSS class utilities",
+            "type": "styling"
+        },
+        "clsx": {
+            "purpose": "Conditional classnames",
+            "type": "utility"
+        },
+        "tailwind-merge": {
+            "purpose": "Merge Tailwind classes",
+            "type": "utility"
+        }
+    },
+    "scripts": {
+        "dev": "Start development server",
+        "build": "Build production bundle",
+        "preview": "Preview production build",
+        "lint": "Run ESLint"
+    },
+    "configuration_files": {
+        "vite.config.ts": "Vite configuration",
+        "tsconfig.json": "TypeScript configuration",
+        "tailwind.config.js": "Tailwind CSS configuration",
+        "components.json": "shadcn/ui configuration",
+        "package.json": "Project dependencies"
+    },
+    "documentation": {
+        "architecture": "PROJECT_ARCHITECTURE.md",
+        "component_registry": "COMPONENT_REGISTRY.md",
+        "state_management": "STATE_MANAGEMENT.md",
+        "api_endpoints": "API_ENDPOINTS.md",
+        "conventions": ".agent/CONVENTIONS.md",
+        "skill_reference": "vite-nextjs-frontend-SKILL.md"
+    },
+    "metadata_schema_version": "1.0",
+    "notes": [
+        "This file should be updated whenever components, stores, pages, or routes are added/removed",
+        "Component counts and arrays should be kept current for AI agent navigation",
+        "Last updated timestamp should be modified on each significant change"
+    ]
+}
